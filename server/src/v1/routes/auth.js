@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { body } = require("express-validator");
 const User = require("../models/user");
 const validation = require("../handlers/validation");
-const userController = require("../controllers/user");
+const userController = require("../contorollers/user");
 const tokenHandler = require("../handlers/tokenHandler");
 
 // ユーザー新規登録API
