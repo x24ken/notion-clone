@@ -9,7 +9,6 @@ const tokenDecode = (req) => {
   const bearerHeader = req.headers["authorization"];
   if (bearerHeader) {
     const beare = bearerHeader.split(" ")[1];
-    console.log("トークン: " + beare);
     try {
       const decodedToken = JWT.verify(beare, TOKEN_SECRET_KEY);
       return decodedToken;
